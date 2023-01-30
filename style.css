@@ -1,0 +1,446 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+/* Font families*/
+/*
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Great Vibes', cursive; 
+*/
+
+/* Color codes: */
+/*
+    Accent color: #FDC800
+    Black shade: #232323
+    Background color: #EAEDF4
+    White shade: #F8F8F8 
+*/
+
+/* ******************************** */
+/* GLOBAL styles */
+
+html {
+    font-family: 'Cabin', sans-serif;
+    font-size: 125%;
+    color: #232323;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+span,
+.logo {
+    font-family: 'Great Vibes', cursive;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+.socials img {
+    color: #FDC800;
+    width: 15px;
+    height: 15px;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    background-color: #FDC800;
+    color: #232323;
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 1.75rem;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 10px;
+    min-width: 200px;
+    border: none;
+}
+
+.logo {
+    font-size: 55px;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+ul.footerCapitalize {
+    text-transform: capitalize;
+}
+p {
+    line-height: 29px;
+}
+
+/* ********************************* */
+/* HEADER styles */
+
+header {
+    background-image: url(./tasty-assets/asset-1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    padding: 30px 0;
+}
+header .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navBar {
+    min-width: 50%;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    padding: 50px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    text-transform: capitalize;
+    align-self: center;
+    margin: 0 auto;
+    text-align:center;
+}
+
+div.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+.socials a {
+    width: 50px;
+    height: 50px;
+    margin-right: 5%;
+}
+
+header h1,
+header div.socials {
+    margin-top: 10%;
+}
+
+
+/* ********************************* */
+/* MAIN styles */
+
+/* About section */
+section.about {
+    min-height: 50vh;
+}
+
+section.about .wrapper{
+    display: flex;
+    flex-direction: column;
+}
+section.about h2 {
+    padding: 30px 30px 0px 30px;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+section.about p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 70%;
+    padding: 30px;
+}
+section.about button {
+    margin-top: 30px;
+}
+
+/* NavBanner section */
+
+section.navBanner {
+    background-color: #232323;
+    min-height: 30vh;
+}
+
+section.navBanner ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+div.navBanner li {
+    width: 30vh;
+}
+
+div.navBanner a {
+    color: #F8F8F8;
+    padding: 20px;
+    max-height: max-content;
+}
+section.navBanner div.wrapper {
+    justify-content: center;
+    align-items: center;
+    padding: 110px;
+}
+
+/* imgContainer section */
+
+section.imgContainer {
+    min-height: 50vh;
+}
+.imgContainer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+.imgContainer li {
+    max-width: 25%;
+    max-height: auto;
+}
+
+/* flexBlog section */
+
+section.flexBlog {
+    /* degistirdim           */
+    background-color: #EAEDF4;      
+    background-size: cover;
+}
+
+section.flexBlog .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexBlog h2 {
+    margin: 0px;
+}
+.order1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.order2 {
+    width: 50%;
+}
+
+.order3 {
+    width: 50%;
+}
+
+.order4 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.order1 p,
+.order4 p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.flexBlog figure {
+    background-size: cover;
+}
+
+/* cookBio section */
+section.cookBio {
+    min-height: 50vh;
+    padding: 30px;
+    font-size: 1rem;
+}
+
+section.cookBio .cookInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 80vh;
+}
+
+section.cookBio figure {
+    padding: 20px;
+    min-width: 10vh;
+    margin: 0 auto;
+}
+
+.cookInfo button {
+    margin: 0;
+}
+
+
+
+/* ********************************* */
+/* FOOTER styles */
+
+footer {
+    background-color: #232323;
+    color: #EAEDF4;
+    min-height: 40vh;
+}
+footer a {
+    color: #EAEDF4;
+}
+footer.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+footer div {
+    width: 20vh;
+}
+
+footer ul {
+    text-transform: capitalize;
+    line-height: normal;
+}
+footer a.footerEmail {
+    text-transform: lowercase;
+}
+
+.subscribe {
+    min-width: 40vh;
+}
+footer input {
+    position: relative;
+    line-height: 1.5rem;
+    padding: 10px;
+    width: 100%;
+}
+footer .footerForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: fit-content;
+    padding: 0px 20px;
+}
+
+footer button {
+    position: absolute;
+    line-height: 1.7rem;
+}
+div.subscribe form {
+    flex-grow: 4;
+}
+
+footer div.bottomInfo p {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+    padding: 70px 40px 20px 40px;
+}
+
+.contactPages {
+    margin: 0;
+    padding-left: 4vh;
+}
+h4 {
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* ********************************* */
+/* MEDIA QUERIES */
+
+@media (max-width: 940px) {
+    p,
+    h2 {
+        line-height: 1.2rem;
+        padding: 5px;
+    }
+    button {
+        padding: 5px;
+    }
+
+    .imgContainer ul {
+        padding: 20px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        height: 50vh;
+    }
+    .imgContainer {
+        margin: 0;
+    }
+    img {
+        width: 25vh;
+        height: 25vh;
+    }
+    .flexBlog img {
+        background-size: 100vh;
+        width: 100%;
+        height: 30vh;
+    }
+    .cookBio .cookInfo {
+        width: 60%;
+    }
+    footer div.wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .footerForm {
+        min-width: 100vh;
+    }
+    footer .footerForm {
+        padding: 0;
+    }
+    footer input {
+        line-height: 1rem;
+    }
+    h4 {
+    margin-top: 0;
+    font-weight: normal;
+    }
+    
+}
